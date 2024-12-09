@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Навігаційний блок</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            background-color: #555;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        nav ul li a:hover {
+            background-color: #777;
+            border-radius: 5px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: nowrap;
+            min-height: 60vh;
+        }
+        .sidebar {
+            background-color: #f4f4f4;
+            padding: 20px;
+            flex: 1;
+        }
+        .main-content {
+            background-color: #ddd;
+            padding: 20px;
+            flex: 3;
+        }
+        footer {
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Мій веб-сайт</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">На головну</a></li>
+            <li><a href="about.html">Про сайт</a></li>
+            <li><a href="links.html">Карта сайту</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="sidebar">Ліва колонка</div>
+        <div class="main-content">Основний вміст</div>
+        <div class="sidebar">Права колонка</div>
+    </div>
+    <footer>
+        <p>Всі права захищені &copy; 2024</p>
+    </footer>
+</body>
+</html>
